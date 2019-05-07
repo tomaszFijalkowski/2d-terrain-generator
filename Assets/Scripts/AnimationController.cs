@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationController : MonoBehaviour
@@ -8,7 +9,7 @@ public class AnimationController : MonoBehaviour
     [SerializeField] private GameObject pressAnyKey;
     [SerializeField] private GameObject sidePanel;
     [SerializeField] private GameObject tooltip;
-    [SerializeField] private GameObject fadeIn;
+    [SerializeField] private GameObject fade;
 
     private readonly int continueTrigger = Animator.StringToHash("continue");
     private readonly int showTrigger = Animator.StringToHash("show");
@@ -17,6 +18,7 @@ public class AnimationController : MonoBehaviour
     private readonly List<Animator> splashScreenAnimators = new List<Animator>();
     private Animator sidePanelAnimator;
     private Animator tooltipAnimator;
+    private Animator fadeAnimator;
 
     private bool sidePanelHidden = true;
     private bool splashScreen = true;
@@ -40,6 +42,7 @@ public class AnimationController : MonoBehaviour
         splashScreenAnimators.Add(pressAnyKey.GetComponent<Animator>());
         sidePanelAnimator = sidePanel.GetComponent<Animator>();
         tooltipAnimator = tooltip.GetComponent<Animator>();
+        fadeAnimator = fade.GetComponent<Animator>();
     }
 
     private void Continue()
@@ -53,7 +56,14 @@ public class AnimationController : MonoBehaviour
 
         ToggleSidePanel();
         splashScreen = false;
-        fadeIn.SetActive(false);
+        fadeAnimator.SetTrigger(continueTrigger);
+        StartCoroutine(DisableFadePanel());
+    }
+
+    private IEnumerator DisableFadePanel()
+    {
+        yield return new WaitForSeconds(0.5f);
+        fade.SetActive(false);
     }
 
     private void ToggleSidePanel()
