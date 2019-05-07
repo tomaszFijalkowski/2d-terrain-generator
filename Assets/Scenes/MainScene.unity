@@ -261,6 +261,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2956394529819200153, guid: 5e94482455c52448192308afee19579a,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 299082652510459169, guid: 5e94482455c52448192308afee19579a,
         type: 3}
       propertyPath: m_CullTransparentMesh
@@ -391,6 +396,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1248237351742700381, guid: 5e94482455c52448192308afee19579a,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1248237351742700378, guid: 5e94482455c52448192308afee19579a,
         type: 3}
       propertyPath: m_Color.a
@@ -410,6 +420,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248237351727740067, guid: 5e94482455c52448192308afee19579a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248237351727740067, guid: 5e94482455c52448192308afee19579a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248237351727740067, guid: 5e94482455c52448192308afee19579a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1248237351727740066, guid: 5e94482455c52448192308afee19579a,
         type: 3}
