@@ -29,7 +29,7 @@ public class TerrainGenerator : MonoBehaviour
     [SerializeField] private float elevationIndex;
     [Range(-0.66f, 0.66f)]
     [SerializeField] private float humidityIndex;
-    
+
     private new Renderer renderer;
     private ColorMap colorMap;
 
@@ -153,6 +153,6 @@ public class TerrainGenerator : MonoBehaviour
                                    Math.Pow(y - sideLength / 2, 2)) / sideLength;
 
         // Shape into an island
-        elevation = elevation - Mathf.Pow(distanceToCenter, exponent) * multiplier;
+        elevation -= Mathf.Pow(distanceToCenter, exponent) * multiplier;
     }
 }
