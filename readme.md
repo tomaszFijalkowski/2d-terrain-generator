@@ -8,7 +8,7 @@ Unity WebGL application that gives you a set of parameters to create your own is
 
 You can open the application in the browser under [this link.](https://tomaszfijalkowski.github.io/2d-terrain-generator/)
 
-## Showcase
+## Screenshots
 
 Generic Island:
 
@@ -25,3 +25,5 @@ Volcano Island:
 Rocky Island:
 
 ![ThirdExample](screenshots/screen4.png)
+
+**If you like this project, consider giving it a :star:**
