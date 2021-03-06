@@ -6,7 +6,7 @@ Unity WebGL application that gives you a set of parameters to create your own is
 
 ## How to run
 
-You can open the application in the browser under [this link](https://tomaszfijalkowski.github.io/2d-terrain-generator/).
+You can open the application in the browser under [this link.](https://tomaszfijalkowski.github.io/2d-terrain-generator/)
 
 ## Showcase
 
