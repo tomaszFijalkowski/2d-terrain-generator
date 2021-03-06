@@ -1,14 +1,14 @@
 # 2D Terrain Generator
 
-### About project
+## About the project
 
-Unity WebGL application that gives you a set of parameters to create your own islands. The terrain is generated based on Perlin Noise and different modifications to it.
+Unity WebGL application that gives you a set of parameters to create your own islands. The terrain is generated based on Perlin Noise and various modifications to it.
 
-### How to run
+## How to run
 
 You can open the application in the browser under [this link](https://tomaszfijalkowski.github.io/2d-terrain-generator/index).
 
-### Screenshots
+## Showcase
 
 Generic Island:
 
@@ -21,7 +21,6 @@ Shattered Island:
 Volcano Island:
 
 ![ThirdExample](screenshots/screen3.png)
-
 
 Rocky Island:
 
