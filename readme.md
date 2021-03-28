@@ -2,7 +2,7 @@
 
 ## About the project
 
-Unity WebGL application that gives you a set of parameters to create your own islands. The terrain is generated based on Perlin Noise and various modifications to it.
+Unity WebGL application that gives you a set of parameters to create your own islands. The terrain is generated based on Perlin Noise and various modifications made to it.
 
 ## How to run
 
